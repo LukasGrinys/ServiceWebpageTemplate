@@ -1,0 +1,132 @@
+.sectionPurple {
+    width: 100%;
+    background-color: #6633ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.sectionWhite {
+    width: 100%;
+    background-color: #f0e6ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+    flex-wrap: wrap-reverse;
+    margin-top: 40px;
+}
+.sectionWhite p {
+    color: #0a001a;
+}
+.sectionWhite h1 {
+    color: #6633ff; 
+}
+
+.graphicBox {
+    width: 600px;
+    position: relative;
+}
+.illustration {
+    position: relative;
+    z-index: 99;
+    width: 550px;
+    height: 550px;
+    margin: 40px;    
+}
+.sectionInfo {
+    color: #f1f1f1;
+    padding: 35px;
+    width: 650px;
+}
+.sectionInfo h1 {
+    font-size: 4.5em;
+    font-family: 'Alata';
+}
+h1.animated {
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.sectionInfo p {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+p.animated {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.sectionInfo button {
+    color: #f1f1f1;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 35px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    background-color: #0080ff;
+    transition: 200ms ease-out;
+    margin-bottom: 0;
+    position: relative;
+}
+.sectionInfo button > img {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+}
+button.animated {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.sectionInfo button:hover {
+    background-color: #0a001a;
+    transform: scale(1.02, 1.02);
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+.cloud {
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    height: 150px;
+    background: url('./cloud.png');
+    opacity: 0.3;
+    animation-name: float;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    top: 65px;
+}
+
+@keyframes float {
+    0% {
+        margin-left: -50%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+@keyframes float2 {
+    from { transform: translateX(-70%) }
+    to { transform: translateX(0%) }
+}
+@keyframes appear {
+    0% { opacity: 0; transform: translateX(-70%)}
+    100% { opacity: 1; transform: translateX(0%)}
+}
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}

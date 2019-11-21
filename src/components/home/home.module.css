@@ -1,47 +1,30 @@
-.sectionPurple {
+.sectionCard {
     width: 100%;
-    background-color: #6633ff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Montserrat';
     flex-wrap: wrap;
     overflow: hidden;
+    margin-bottom: 40px;
 }
-.sectionWhite {
-    width: 100%;
-    background-color: #f0e6ff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: 'Montserrat';
-    flex-wrap: wrap-reverse;
-    margin-top: 40px;
-}
-.sectionWhite p {
-    color: #0a001a;
-}
-.sectionWhite h1 {
-    color: #6633ff; 
-}
-
 .graphicBox {
     width: 600px;
     position: relative;
 }
 .illustration {
     position: relative;
-    z-index: 99;
+    z-index: 50;
     width: 550px;
     height: 550px;
-    margin: 40px;    
+    /* padding: 40px; */
+    margin: 40px 20px;
 }
 .sectionInfo {
-    color: #f1f1f1;
-    padding: 35px;
+    padding: 40px 35px;
     width: 650px;
 }
-.sectionInfo h1 {
+.sectionCard h1 {
     font-size: 4.5em;
     font-family: 'Alata';
 }
@@ -49,8 +32,7 @@ h1.animated {
     animation-name: appear;
     animation-duration: 2s;
 }
-
-.sectionInfo p {
+.sectionCard p {
     font-size: 2.5em;
     font-weight: 300;
 }
@@ -61,7 +43,7 @@ p.animated {
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
-.sectionInfo button {
+.sectionCard button {
     color: #f1f1f1;
     outline: none;
     border: none;
@@ -75,13 +57,6 @@ p.animated {
     margin-bottom: 0;
     position: relative;
 }
-.sectionInfo button > img {
-    position: absolute;
-    top: 10px;
-    right: 8px;
-    width: 24px;
-    height: 24px;
-}
 button.animated {
     opacity: 0;
     animation-name: fadeIn;
@@ -89,7 +64,7 @@ button.animated {
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
-.sectionInfo button:hover {
+.sectionCard button:hover {
     background-color: #0a001a;
     transform: scale(1.02, 1.02);
     transition: 250ms ease-in-out;
@@ -109,7 +84,49 @@ button.animated {
     animation-direction: alternate-reverse;
     top: 65px;
 }
+.cloudSection {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
 
+.partnersSection {
+    width: 100%;
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+}
+.partnersSection h1 {
+    padding: 15px;
+}
+
+.partnerBox {
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    color: #0a001a;
+}
+.partnerBox img {
+    max-width: 180px;
+}
+.partnerBox p {
+    font-size: 1.2em;
+}
+.contactInfo {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.contactInfo p{
+    font-size: 1.2em;
+}
+.contactIcon {
+    filter: invert(100%);
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
 @keyframes float {
     0% {
         margin-left: -50%;

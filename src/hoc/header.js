@@ -7,7 +7,6 @@ class Header extends Component {
         return (
             <div className={styles.header}>
                 <div className={styles.logo}>Logo</div>
-                <div className={styles.navBarBtn}>Button</div>
                 <NavigationBar/>
             </div>
         );

@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     margin-bottom: 40px;
-    padding: 25px;
+    padding: 25px 15px;
 }
 .graphicBox {
     width: 600px;

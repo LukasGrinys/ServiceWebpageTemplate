@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+    min-height: 520px;
+    background-image: url('partnersHeader.jpeg');
+    background-blend-mode: darken;
+    background-color: #0f0729e7;
+    background-position: center center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1 {
+    color: #f2f2f2;
+    font-family: 'Righteous';
+    font-size: 4em;
+    font-weight: 500;
+    animation-name: appearTop;
+    animation-duration: 2s;
+    animation-fill-mode: ease-in-out;
+}
+.partnersSection {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-family: 'Montserrat';
+}
+.partnersSection h1 {
+    text-align: center;
+    color: #0a001a;
+}
+.partnerItem {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.partnerItem h2 {
+    text-align: center;
+    color: #0a001a;
+}
+.partnerItem .left {
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+}
+.partnerItem .right {
+    width: 300px;
+    padding: 15px;
+    text-align: justify;
+}
+.partnerLogo {
+    width: 220px;
+    height: 220px;
+}
+@keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

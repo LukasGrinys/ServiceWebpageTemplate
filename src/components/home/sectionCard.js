@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './home.module.css';
 import { Link } from 'react-router-dom';
+import * as Scroll from 'react-scroll';
 
 const SectionCard = (props) => {
     let settings = {
@@ -36,20 +37,23 @@ const SectionCard = (props) => {
         default:
             break;
     }
+    let scroll = Scroll.animateScroll;
 
     const returnButton = () => {
         let isButton = props.isButton;
         let template = ''
         if (isButton) {
             template = (
-                <Link to={props.buttonLink}>
+                <Link to={props.buttonLink} onClick={()=>{
+                    scroll.scrollToTop();
+                }} duration={500}>
                     <button className={animatedClass}>{props.buttonText}</button>
                 </Link>
             )
         } else {
             template = ''
         }
-        return template;
+        return ( template );
     }
     return (
         <div className={styles.sectionCard}

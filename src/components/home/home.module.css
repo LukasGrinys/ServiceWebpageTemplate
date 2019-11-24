@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     margin-bottom: 40px;
+    padding: 25px;
 }
 .graphicBox {
     width: 600px;
@@ -15,10 +16,11 @@
 .illustration {
     position: relative;
     z-index: 50;
-    width: 550px;
-    height: 550px;
-    /* padding: 40px; */
-    margin: 40px 20px;
+    width: 100%;
+    max-width: 550px;
+    max-height: 550px;
+    padding: 40px;
+    margin: 0px 20px;
 }
 .sectionInfo {
     padding: 40px 35px;
@@ -95,6 +97,7 @@ button.animated {
     width: 100%;
     padding: 45px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #f1f1f1;
 }

@@ -18,8 +18,8 @@ const FullNavBar = () => {
                 </Link>
             </div>
             <div className={styles.navItem}>
-                <Link to="/products">
-                    Products
+                <Link to="/service">
+                    Service
                 </Link>
             </div>
             <div className={styles.navItem}>

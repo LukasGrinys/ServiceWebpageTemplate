@@ -105,6 +105,11 @@
     animation-duration: 1s;
 }
 
+.contentWrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
 @media (max-width: 720px) {
     .header {
         height: 65px;

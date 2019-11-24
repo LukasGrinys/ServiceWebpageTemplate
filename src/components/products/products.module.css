@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+    min-height: 520px;
+    background-image: url('productsHeader.jpg');
+    background-blend-mode: darken;
+    background-color: #0f0729c7;
+    background-position: center center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1 {
+    color: #f2f2f2;
+    font-family: 'Righteous';
+    font-size: 4em;
+    font-weight: 500;
+    animation-name: appearTop;
+    animation-duration: 2s;
+    animation-fill-mode: ease-in-out;
+}
+.productsContent {
+    padding: 25px;
+    font-family: 'Montserrat';
+}
+.productsContent h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+.productsContent p {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+}
+.planWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.planItem {
+    height: 380px;
+    width: 250px;
+    border-left: 1.5px solid #0f0729c7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #0f0729c7;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.planName {
+    position: relative;
+    margin-top: 8px;
+    z-index: 5;
+    height: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 300;
+}
+.planNameBack {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    top: -15px;
+    left: -10px;
+    background-color: #0a001a;
+    transform: rotate(-3deg);
+}
+
+.planPriceWrapper {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.planPriceCurrency {
+    font-size: 2em;
+}
+.planPrice {
+    font-size: 3em;
+}
+.planPriceMonth {
+    font-size: 1.5em;
+}
+.featureList {
+    padding: 0 15px;
+}
+.feature {
+    padding: 2px;
+    
+}
+.feature::before {
+    content: '\2713';
+    padding-right: 5px;
+}
+.planButton {
+    color: #f1f1f1;
+    display: block;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 20px auto;
+    background-color: #0080ff;
+    transition: 200ms ease-out;
+    margin-bottom: 0;
+    position: relative;
+}
+.planButton:hover {
+        background-color: #0a001a;
+        transform: scale(1.02, 1.02);
+        transition: 250ms ease-in-out;
+        cursor: pointer;
+}
+@keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

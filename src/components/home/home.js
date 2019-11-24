@@ -46,7 +46,7 @@ class Home extends Component {
                 text="Evaluate your needs and choose from different options we offer"
                 isButton={true}
                 buttonText="Learn More"
-                buttonLink="/products"
+                buttonLink="/service"
                 isAnimated={false}
                 >
                     <Illustration3 className={styles.illustration}/>    

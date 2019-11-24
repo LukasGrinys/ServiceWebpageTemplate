@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    min-height: 520px;
+    background-image: url('header.jpg');
+    background-blend-mode: darken;
+    background-color: #0f0729c7;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1 {
+    color: #f2f2f2;
+    font-family: 'Righteous';
+    font-size: 4em;
+    font-weight: 500;
+    animation-name: appearTop;
+    animation-duration: 2s;
+    animation-fill-mode: ease-in-out;
+}
+.aboutContent {
+    padding: 25px;
+    font-family: 'Montserrat';
+}
+.aboutContent h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+.aboutContent p {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+}
+.illustration {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+@keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

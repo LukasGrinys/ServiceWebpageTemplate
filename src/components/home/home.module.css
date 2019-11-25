@@ -31,8 +31,9 @@
     font-family: 'Alata';
 }
 h1.animated {
-    animation-name: appear;
-    animation-duration: 2s;
+    animation: appear 2s;
+    -webkit-animation: appear 2s;
+    -moz-animation: appear 2s;
 }
 .sectionCard p {
     font-size: 2.5em;
@@ -44,6 +45,15 @@ p.animated {
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: fadeIn;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+
 }
 .sectionCard button {
     color: #f1f1f1;
@@ -56,6 +66,7 @@ p.animated {
     border-radius: 50px;
     background-color: #0080ff;
     transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
     margin-bottom: 0;
     position: relative;
 }
@@ -65,11 +76,19 @@ button.animated {
     animation-duration: 1s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: fadeIn;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+
 }
 .sectionCard button:hover {
     background-color: #0a001a;
     transform: scale(1.02, 1.02);
-    transition: 250ms ease-in-out;
     cursor: pointer;
 }
 .cloud {
@@ -84,6 +103,17 @@ button.animated {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    -webkit-animation-name: float;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+    -moz-animation-name: float;
+    -moz-animation-duration: 25s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate-reverse;
+
     top: 65px;
 }
 .cloudSection {
@@ -131,22 +161,40 @@ button.animated {
     margin-right: 8px;
 }
 @keyframes float {
-    0% {
-        margin-left: -50%;
-    }
-    100% {
-        margin-left: 100%;
-    }
+    0% { margin-left: -50%; }
+    100% { margin-left: 100%; }
 }
-@keyframes float2 {
-    from { transform: translateX(-70%) }
-    to { transform: translateX(0%) }
+@-webkit-keyframes float {
+    0% { margin-left: -50%; }
+    100% { margin-left: 100%; }
 }
+@-moz-keyframes float {
+    0% { margin-left: -50%; }
+    100% { margin-left: 100%; }
+}
+
 @keyframes appear {
     0% { opacity: 0; transform: translateX(-70%)}
     100% { opacity: 1; transform: translateX(0%)}
 }
+@-webkit-keyframes appear {
+    0% { opacity: 0; transform: translateX(-70%)}
+    100% { opacity: 1; transform: translateX(0%)}
+}
+@-moz-keyframes appear {
+    0% { opacity: 0; transform: translateX(-70%)}
+    100% { opacity: 1; transform: translateX(0%)}
+}
+
 @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+@-moz-keyframes fadeIn {
     from { opacity: 0 }
     to { opacity: 1 }
 }

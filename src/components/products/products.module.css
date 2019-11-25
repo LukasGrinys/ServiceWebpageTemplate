@@ -16,9 +16,9 @@
     font-family: 'Righteous';
     font-size: 4em;
     font-weight: 500;
-    animation-name: appearTop;
-    animation-duration: 2s;
-    animation-fill-mode: ease-in-out;
+    animation: appearTop 2s;
+    -webkit-animation: appearTop 2s;
+    -moz-animation: appearTop 2s;
 }
 .productsContent {
     padding: 25px;
@@ -112,16 +112,36 @@
     margin: 20px auto;
     background-color: #0080ff;
     transition: 200ms ease-out;
+    -webkit-transition: 200ms ease-out;
     margin-bottom: 0;
     position: relative;
 }
 .planButton:hover {
         background-color: #0a001a;
-        transform: scale(1.02, 1.02);
-        transition: 250ms ease-in-out;
+        transform: scale(1.02, 1.02);  
         cursor: pointer;
 }
 @keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-moz-keyframes appearTop {
     from { 
         transform: translateY(-100px);
         opacity: 0;

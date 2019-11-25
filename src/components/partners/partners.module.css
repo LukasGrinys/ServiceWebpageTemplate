@@ -16,9 +16,9 @@
     font-family: 'Righteous';
     font-size: 4em;
     font-weight: 500;
-    animation-name: appearTop;
-    animation-duration: 2s;
-    animation-fill-mode: ease-in-out;
+    animation: appearTop 2s;
+    -webkit-animation: appearTop 2s;
+    -moz-animation: appearTop 2s;
 }
 .partnersSection {
     display: flex;
@@ -59,6 +59,26 @@
     height: 220px;
 }
 @keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-moz-keyframes appearTop {
     from { 
         transform: translateY(-100px);
         opacity: 0;

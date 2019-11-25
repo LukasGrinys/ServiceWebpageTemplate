@@ -39,11 +39,6 @@
     height: 500px;
     padding: 15px 25px;
 }
-.contactBox .left img{
-     filter: invert(100%);
-     width: 250px;
-     height: 250px;
-}
 .contactBox .right {
     padding-left: 45px;
 }
@@ -54,7 +49,9 @@
     margin-right: 10px;
 }
 .contactPicture {
-
+    filter: invert(100%);
+    width: 250px;
+    height: 250px;
 }
 @keyframes appearTop {
     from { 

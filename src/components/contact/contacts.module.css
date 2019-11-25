@@ -1,0 +1,68 @@
+.header {
+    width: 100%;
+    min-height: 520px;
+    background-image: url('contactHeader.jpeg');
+    background-blend-mode: darken;
+    background-color: #0f0729e7;
+    background-position: center center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1 {
+    color: #f2f2f2;
+    font-family: 'Righteous';
+    font-size: 4em;
+    font-weight: 500;
+    animation-name: appearTop;
+    animation-duration: 2s;
+    animation-fill-mode: ease-in-out;
+}
+.contactsWrapper {
+    font-family: 'Montserrat';
+    background-color: #0a001a;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 500px;
+    flex-wrap: wrap;
+}
+.contactsWrapper h1 {
+    width: 100%;
+    text-align: center;
+}
+.contactBox {
+    width: 330px;
+    height: 500px;
+    padding: 15px 25px;
+}
+.contactBox .left img{
+     filter: invert(100%);
+     width: 250px;
+     height: 250px;
+}
+.contactBox .right {
+    padding-left: 45px;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    filter: invert(100%);
+    margin-right: 10px;
+}
+.contactPicture {
+
+}
+@keyframes appearTop {
+    from { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -3,6 +3,9 @@ import styles from './products.module.css'
 
 import ContentWrapper from '../../hoc/contentWrapper';
 import Plans from './plans';
+
+import ToTopBtn from '../../hoc/toTopBtn';
+
 const Service = () => {
     return (
         <div>
@@ -25,6 +28,7 @@ const Service = () => {
                     Fusce convallis nibh dui, ac congue nisl ornare id. 
                     Aenean sagittis neque cursus lorem maximus auctor.
                     </p>
+                    <ToTopBtn/>
                     <h2>Our plans</h2>
                     <Plans></Plans>
                     <p>

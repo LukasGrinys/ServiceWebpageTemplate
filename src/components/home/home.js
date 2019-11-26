@@ -5,6 +5,7 @@ import { ReactComponent as Illustration } from './connection.svg'
 import { ReactComponent as Illustration2 } from './service.svg'
 import { ReactComponent as Illustration3 } from './options.svg';
 
+import ToTopBtn from '../../hoc/toTopBtn';
 import SectionCard from './sectionCard';
 import PartnersCard from './partnersCard';
 import ContactsCard from './contactsCard';
@@ -27,7 +28,7 @@ class Home extends Component {
                 >
                     <Illustration className={styles.illustration}/>    
                 </SectionCard>
-
+                <ToTopBtn/>
                 <SectionCard 
                 type="white" flexDirection="row-reverse"
                 headlineText="What we are about"

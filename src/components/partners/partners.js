@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import ContentWrapper from '../../hoc/contentWrapper';
 
+import ToTopBtn from '../../hoc/toTopBtn';
 
 
 const Partners = () => {
@@ -12,6 +13,7 @@ const Partners = () => {
             <div className={styles.header}>
                 <h1>Partners</h1>
             </div>
+            <ToTopBtn/>
             <ContentWrapper>
                 <div className={styles.partnersSection}>
                 <h1>Hear from our partners</h1>
@@ -31,6 +33,7 @@ const Partners = () => {
                                     semper porta. Proin sagittis varius nibh 
                                     eget viverra.</p>
                             </div>
+                            
                         </div>
                     </ScrollAnimation>
                     

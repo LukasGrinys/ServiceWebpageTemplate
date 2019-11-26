@@ -5,6 +5,8 @@ import ContentWrapper from '../../hoc/contentWrapper';
 import { ReactComponent as Illustration} from '../home/connection.svg';
 import { ReactComponent as Illustration2} from '../home/options.svg';
 import styles from './about.module.css';
+
+import ToTopBtn from '../../hoc/toTopBtn';
 class About extends Component {
     render() {
         return (
@@ -19,6 +21,7 @@ class About extends Component {
                         interdum. Integer sollicitudin, tortor vitae aliquam eleifend, 
                         mi leo venenatis lacus, ut mollis quam dolor id libero.<br></br>
                         </p>
+                        <ToTopBtn/>
                         <ScrollAnimation animateIn={"fadeInUp"}>
                             <div className={styles.imageContainer}>
                             <Illustration className={styles.illustration}/>          

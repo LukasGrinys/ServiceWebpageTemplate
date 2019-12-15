@@ -13,7 +13,6 @@ const Partners = () => {
             <div className={styles.header}>
                 <h1>Partners</h1>
             </div>
-            <ToTopBtn/>
             <ContentWrapper>
                 <div className={styles.partnersSection}>
                 <h1>Hear from our partners</h1>
@@ -36,7 +35,7 @@ const Partners = () => {
                             
                         </div>
                     </ScrollAnimation>
-                    
+                    <ToTopBtn/>
                     <ScrollAnimation animateIn="fadeInLeft" duration={2} animateOnce={true}>
                         <div className={styles.partnerItem}>
                             <div className={styles.left}>

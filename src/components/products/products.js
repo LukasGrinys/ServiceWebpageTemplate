@@ -3,13 +3,15 @@ import styles from './products.module.css'
 
 import ContentWrapper from '../../hoc/contentWrapper';
 import Plans from './plans';
-
+import headerImg from './productsHeader.jpg';
 import ToTopBtn from '../../hoc/toTopBtn';
 
 const Service = () => {
     return (
         <div>
             <div className={styles.header}>
+                <img src={headerImg} alt="Service" className={styles.headerImg}/>
+                <div className={styles.filter}/>
                 <h1>
                     Service
                 </h1>

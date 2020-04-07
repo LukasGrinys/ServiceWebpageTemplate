@@ -2,10 +2,14 @@ import React from 'react';
 import styles from './contacts.module.css';
 import ScrollAnimation from 'react-animate-on-scroll'
 import ContactBox from './contactBox';
+import headerImg from './contactHeader.jpeg';
+
 const Contact = () => {
     return (
         <div>
             <div className={styles.header}>
+                <img src={headerImg} alt="Contact" className={styles.headerImg}/>
+                <div className={styles.filter}/>
                 <h1>Contact</h1>
             </div>
             <div className={styles.contactsWrapper}>
@@ -20,7 +24,7 @@ const Contact = () => {
                     />
                 </ScrollAnimation>
 
-                <ScrollAnimation delay={1000} animateIn={'fadeInLeft'} animateOnce={true}>
+                <ScrollAnimation delay={800} animateIn={'fadeInLeft'} animateOnce={true}>
                     <ContactBox
                     name={"John Doe"}
                     position={"Administrator"}
@@ -30,7 +34,7 @@ const Contact = () => {
                     />    
                 </ScrollAnimation>               
                 
-                <ScrollAnimation delay={2000} animateIn={'fadeInLeft'} animateOnce={true}>
+                <ScrollAnimation delay={1600} animateIn={'fadeInLeft'} animateOnce={true}>
                     <ContactBox
                     name={"James Doe"}
                     position={"Administrator"}

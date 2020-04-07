@@ -2,33 +2,36 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat';
     flex-wrap: wrap;
     overflow: hidden;
+    object-fit: center;
     margin-bottom: 40px;
     padding: 25px 15px;
 }
 .graphicBox {
     width: 600px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .illustration {
     position: relative;
     z-index: 50;
     width: 100%;
-    max-width: 550px;
-    max-height: 550px;
-    padding: 40px;
-    margin: 0px 20px;
+    max-width: 500px;
+    max-height: 500px;
 }
 .sectionInfo {
     padding: 40px 35px;
-    width: 650px;
+    width: 500px;
 }
 .sectionCard h1 {
     font-size: 4.5em;
     font-family: 'Alata';
+    text-align: center;
 }
 h1.animated {
     animation: appear 2s;
@@ -92,7 +95,7 @@ button.animated {
     cursor: pointer;
 }
 .cloud {
-    position: absolute;
+    position: relative;
     z-index: 4;
     width: 300px;
     height: 150px;

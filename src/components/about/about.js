@@ -22,7 +22,7 @@ class About extends Component {
                         mi leo venenatis lacus, ut mollis quam dolor id libero.<br></br>
                         </p>
                         <ToTopBtn/>
-                        <ScrollAnimation animateIn={"fadeInUp"}>
+                        <ScrollAnimation animateIn={"fadeInLeft"} animateOnce={true} >
                             <div className={styles.imageContainer}>
                             <Illustration className={styles.illustration}/>          
                             </div>   
@@ -41,7 +41,7 @@ class About extends Component {
                         condimentum gravida. Sed porta purus sit amet velit auctor, 
                         non efficitur enim pharetra. 
                         </p>
-                        <ScrollAnimation animateIn={"fadeInUp"}>
+                        <ScrollAnimation animateIn={"fadeInLeft"} animateOnce={true}>
                             <div className={styles.imageContainer}>
                             <Illustration2 className={styles.illustration}/>          
                             </div>   

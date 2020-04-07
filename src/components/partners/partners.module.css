@@ -11,14 +11,11 @@
 }
 .headerImg {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 1500px;
-    object-position: center;
-    transform: translateY(250px);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     background-color: #0f0729c7;
     background-blend-mode: darken;
-    object-fit: contain;
     z-index: 48;
 }
 .filter {

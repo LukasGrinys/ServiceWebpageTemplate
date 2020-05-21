@@ -3,8 +3,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Header from './header';
 import ContentWrapper from '../../hoc/contentWrapper';
 import { ReactComponent as Illustration} from '../home/connection.svg';
-import { ReactComponent as Illustration2} from '../home/options.svg';
 import styles from './about.module.css';
+import Line from './../../hoc/line';
 
 import ToTopBtn from '../../hoc/toTopBtn';
 class About extends Component {
@@ -18,8 +18,7 @@ class About extends Component {
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Aliquam fermentum ipsum non justo tempus, eu hendrerit ex 
-                        interdum. Integer sollicitudin, tortor vitae aliquam eleifend, 
-                        mi leo venenatis lacus, ut mollis quam dolor id libero.<br></br>
+                        interdum. <br></br>
                         </p>
                         <ToTopBtn/>
                         <ScrollAnimation animateIn={"fadeInLeft"} animateOnce={true} >
@@ -31,21 +30,16 @@ class About extends Component {
                         Vivamus vitae magna tortor. Quisque porta dolor sed quam 
                         egestas volutpat. Duis scelerisque metus id luctus eleifend. 
                         Pellentesque ornare nunc eget ligula dapibus, vitae placerat 
-                        neque eleifend. Duis a hendrerit dolor, at venenatis nibh.
+                        neque eleifend.
                         </p>
                         <h2>Our goal</h2>
                         <p>
                         Phasellus ac odio a ex tempor consequat. Quisque ultrices 
                         leo sed leo iaculis, id mattis felis efficitur. Cras vel 
                         eleifend enim, non viverra orci. Nam accumsan lorem in augue 
-                        condimentum gravida. Sed porta purus sit amet velit auctor, 
-                        non efficitur enim pharetra. 
+                        condimentum gravida. 
                         </p>
-                        <ScrollAnimation animateIn={"fadeInLeft"} animateOnce={true}>
-                            <div className={styles.imageContainer}>
-                            <Illustration2 className={styles.illustration}/>          
-                            </div>   
-                        </ScrollAnimation> 
+                        <Line/>
                         <p>
                         Aenean a nulla dui. Sed a porta erat. Donec egestas efficitur 
                         sollicitudin. Curabitur a eros quis justo luctus pharetra in 
@@ -58,15 +52,6 @@ class About extends Component {
                         interdum scelerisque quis, vehicula non nunc. Nam scelerisque 
                         malesuada venenatis. Maecenas lacinia arcu justo, nec pulvinar
                         lacus venenatis eu. 
-                        </p>
-                        <p>
-                        Aenean non velit tortor. Vestibulum convallis dolor a sapien 
-                        tincidunt, sit amet faucibus justo pharetra. Morbi semper 
-                        hendrerit ipsum vel aliquet. Proin eu eros vulputate diam feugiat
-                         elementum eu at mauris. Nullam id fermentum erat. Pellentesque 
-                         pharetra blandit iaculis. Donec sollicitudin dictum massa, quis 
-                         finibus arcu tincidunt vitae. Fusce mollis dui erat. In hac 
-                         habitasse platea dictumst.
                         </p>
                     </div>
                     

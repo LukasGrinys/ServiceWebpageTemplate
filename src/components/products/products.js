@@ -3,19 +3,14 @@ import styles from './products.module.css'
 
 import ContentWrapper from '../../hoc/contentWrapper';
 import Plans from './plans';
-import headerImg from './productsHeader.jpg';
 import ToTopBtn from '../../hoc/toTopBtn';
+import Header from './header';
+import Line from '../../hoc/line';
 
 const Service = () => {
     return (
         <div>
-            <div className={styles.header}>
-                <img src={headerImg} alt="Service" className={styles.headerImg}/>
-                <div className={styles.filter}/>
-                <h1>
-                    Service
-                </h1>
-            </div>
+            <Header/>
             <ContentWrapper>
                 <div className={styles.productsContent}>
                     <p>
@@ -24,12 +19,6 @@ const Service = () => {
                     Praesent pharetra ultrices orci, ultrices venenatis sem 
                     pellentesque et.
                     </p>
-                    <p>
-                    Quisque fringilla molestie diam, ut commodo 
-                    magna gravida vitae. Integer convallis scelerisque lobortis. 
-                    Fusce convallis nibh dui, ac congue nisl ornare id. 
-                    Aenean sagittis neque cursus lorem maximus auctor.
-                    </p>
                     <ToTopBtn/>
                     <h2>Our plans</h2>
                     <Plans></Plans>
@@ -37,7 +26,9 @@ const Service = () => {
                     Duis eget ligula non risus aliquam vehicula. 
                     Interdum et malesuada fames ac ante ipsum primis 
                     in faucibus. Integer interdum sit amet urna eu 
-                    congue. Pellentesque posuere, purus sed faucibus 
+                    congue. 
+                    <Line/>
+                    Pellentesque posuere, purus sed faucibus 
                     tempus, nibh nisi interdum lorem, ac pharetra arcu
                     velit quis est. Duis iaculis tellus non rhoncus 
                     aliquet.

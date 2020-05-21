@@ -6,8 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <div className={styles.footer}>
-                <p>2019 All Rights Reserved.</p>
-                <p>FromMedToDev</p>
+                <p>All rights reserved. 2019-2020</p>
                 <div className={styles.socialIcons}>
                     <Link to="/" className={styles.socialLink}>
                         <img src="Images/icons/facebook.png" alt="Facebook"/>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './about.module.css'
-import headImg from './header.jpg';
+import styles from './contacts.module.css'
+import headImg from './contactHeader.jpeg';
 
 class Header extends Component {
     state = {
@@ -25,7 +25,7 @@ class Header extends Component {
                 <div className={styles.header}>
                     <img src={headImg} alt="About" className={styles.headerImg}/>
                     <div className={styles.filter}/>
-                    <h1>About us</h1>
+                    <h1>Contact</h1>
                 </div>
             );
         }    

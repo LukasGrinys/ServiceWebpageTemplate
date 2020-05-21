@@ -1,20 +1,15 @@
 import React from 'react';
 import styles from './partners.module.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import headerImg from './partnersHeader.jpeg';
 import ContentWrapper from '../../hoc/contentWrapper';
-
+import Header from './header';
 import ToTopBtn from '../../hoc/toTopBtn';
 
 
 const Partners = () => {
     return (
         <div>
-            <div className={styles.header}>
-                <img src={headerImg} alt="Partners" className={styles.headerImg}/>
-                <div className={styles.filter}/>
-                <h1>Partners</h1>
-            </div>
+            <Header/>
             <ContentWrapper>
                 <div className={styles.partnersSection}>
                 <h1>Hear from our partners</h1>

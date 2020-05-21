@@ -2,16 +2,12 @@ import React from 'react';
 import styles from './contacts.module.css';
 import ScrollAnimation from 'react-animate-on-scroll'
 import ContactBox from './contactBox';
-import headerImg from './contactHeader.jpeg';
+import Header from './header';
 
 const Contact = () => {
     return (
         <div>
-            <div className={styles.header}>
-                <img src={headerImg} alt="Contact" className={styles.headerImg}/>
-                <div className={styles.filter}/>
-                <h1>Contact</h1>
-            </div>
+            <Header/>
             <div className={styles.contactsWrapper}>
                 <h1>Get in touch</h1>
                 <ScrollAnimation animateIn={'fadeInLeft'} animateOnce={true}>

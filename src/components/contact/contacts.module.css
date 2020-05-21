@@ -17,6 +17,25 @@
     background-blend-mode: darken;
     z-index: 48;
 }
+.header_loading {
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to left,#5c47a1,#34285c,#5c47a1);
+    background-size: 200% 520px;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    animation: headerLoading 2s infinite ease-in-out;
+}
+@keyframes headerLoading {
+   0% { background-position-x: 0% }
+   50% { background-position-x: 100% }
+   100% { background-position-x: 0% }
+}
 .filter {
     position: absolute;
     z-index: 49;
